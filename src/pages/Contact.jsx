@@ -55,6 +55,16 @@ const Contact = () => {
                           <span className="btn-caption">Contact</span>
                         </a>
                       </li>
+                      
+                         <li className="main-menu__item">
+                        <a
+                          className="main-menu__link btn btn-anim"
+                          href="/about"
+                        >
+                          <span className="btn-caption">About</span>
+                        </a>
+                      </li>
+                      
 
                       <li className="main-menu__item">
                         <a
@@ -65,7 +75,7 @@ const Contact = () => {
                         </a>
                       </li>
 
-                      
+                       
                     </ul>
                   </nav>
                 </div>
