@@ -1,0 +1,230 @@
+.mxd-divider__image.divider-image-5 {
+  background-image: url("/assets/img/works/1400x1000_prj-details-01.webp") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 420px; /* important so it becomes visible */
+}
+/* ===== Projects preview images FIX ===== */
+
+.mxd-project-item__preview {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 420px;
+  border-radius: 16px;
+}
+
+/* individual previews */
+.preview-image-1 {
+  background-image: url("/assets/img/works/preview/1920x1080_prv-04.webp") !important;
+}
+
+.preview-image-2 {
+  background-image: url("/assets/img/works/preview/1920x1080_prv-01.webp") !important;
+}
+
+.preview-image-3 {
+  background-image: url("/assets/img/works/preview/1920x1080_prv-05.webp") !important;
+}
+
+.preview-image-4 {
+  background-image: url("/assets/img/works/preview/1920x1080_prv-03.webp") !important;
+}
+
+.preview-image-5 {
+  background-image: url("/assets/img/illustrations/1200x800_cpb-06.webp") !important;
+}
+.divider-image-3 {
+  background-image: url("../img/marquee/1200x1000_marquee-14.webp") !important;
+}
+.blog-preview-image-1 {
+  background-image: url("/assets/img/illustrations/360x440_list-04.webp")  !important;
+}
+
+.blog-preview-image-2 {
+  background-image: url("/assets/img/blog/1000x1250_psec-01.webp")  !important;
+}
+
+.blog-preview-image-3 {
+  background-image: url("/assets/img/blog/1000x1250_psec-02.webp")  !important;
+}
+
+/* Safety */
+.mxd-blog-preview__image {
+  min-height: 420px;
+  background-size: cover;
+  background-position: center;
+}
+.mxd-promo__inner {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  display: flex;
+  justify-content: flex-end; /* Ensures content can align relative to the background if needed */
+}
+
+.mxd-promo__bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0; /* Anchor to the right */
+  
+  width: 50%; /* Adjust this percentage to control how much of the right side it covers */
+  
+  background-image: url("/assets/img/illustrations/1440x900_cta-01.webp") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Adjust border radius for the "right end" look */
+  border-top-left-radius: 200px; 
+  border-bottom-left-radius: 200px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  
+  z-index: 0;
+}
+/* ===============================
+   MOBILE SAFETY FIXES
+   =============================== */
+
+@media (max-width: 991px) {
+
+  /* Disable pinned behavior */
+  .mxd-pinned-projects,
+  .mxd-pinned-projects__scroll,
+  .mxd-pinned-projects__static {
+    position: relative !important;
+    height: auto !important;
+    min-height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Prevent section clipping */
+  .mxd-section {
+    overflow: visible !important;
+  }
+
+  /* Reduce heavy min-heights on mobile */
+  .mxd-project-item__preview,
+  .mxd-divider__image,
+  .mxd-blog-preview__image,
+  .mxd-promo__inner {
+    min-height: 240px !important;
+  }
+
+  /* Promo background must not block layout */
+  .mxd-promo__bg {
+    width: 100% !important;
+    border-radius: 0 !important;
+  }
+}
+.mxd-pinned-projects__scroll-inner {
+  height: auto !important;
+}
+/* RESET hamburger button default styles */
+.mxd-nav__hamburger {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Remove focus outline (optional but matches template) */
+.mxd-nav__hamburger:focus,
+.mxd-nav__hamburger:focus-visible {
+  outline: none;
+}
+
+/* Ensure lines behave exactly like anchor version */
+.mxd-nav__hamburger .hamburger__base,
+.mxd-nav__hamburger .hamburger__line {
+  pointer-events: none;
+}
+.mxd-links-lines__link:hover .mxd-links-lines__icon svg {
+  transform: translate(3px, -3px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mxd-links-lines__icon svg {
+  transition: transform 0.3s ease-in-out;
+}
+.headline-img-06::before {
+  background-image: url("../img/works/1400x1000_prj-details-02.webp") !important;
+}
+/* ===============================
+   VALUES SECTION – IMAGE FIX
+================================ */
+
+/* Left large image */
+.image-values-1 {
+  background-image: url("/img/marquee/1200x1000_marquee-16.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+/* Right small image */
+.image-values-2 {
+  background-image: url("/img/marquee/1200x1000_marquee-15.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+/* Ensure values image containers show */
+.mxd-values__image {
+  width: 100%;
+  min-height: 420px;
+}
+
+/* Desktop height balance */
+@media (min-width: 1200px) {
+  .image-values-1 {
+    min-height: 100%;
+  }
+  .image-values-2 {
+    min-height: 360px;
+  }
+}
+
+/* ===============================
+   PARALLAX DIVIDER FIX
+================================ */
+
+.divider-image-8 {
+  background-image: url("/img/works/1400x1000_prj-details-01.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 420px;
+}
+
+.divider-image-9 {
+  background-image: url("/img/works/1400x1000_prj-details-02.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 420px;
+}
+
+/* Required for visibility */
+.mxd-divider__image {
+  width: 100%;
+}
+
+/* ===============================
+   PARALLAX SAFETY (REACT)
+================================ */
+
+.parallax-img,
+.parallax-img-small {
+  will-change: transform;
+  transform: translateZ(0);
+}
